@@ -234,7 +234,7 @@ function ProfileEditor({ id, settings, update, encrypted, users, api, onBack, on
       )}
       {p.type === 'assistant' && (
         <p className="hint" id="urlHint">
-          내가 만든 서버처럼 앱 규약(api-contract.md)을 따르는 서버에 연결합니다. 자연스러운 문장의 파일 작업이 됩니다. 주소에 경로가 없으면 /v1로 연결하고, 입구가 다르면 https://서버주소/ai-agent처럼 입구까지 적습니다. 믿는 서버만 연결하세요.
+          내가 만든 서버처럼 앱 API 규약을 따르는 서버에 연결합니다. 자연스러운 문장의 파일 작업이 됩니다. 주소에 경로가 없으면 /v1로 연결하고, 입구가 다르면 https://서버주소/ai-agent처럼 입구까지 적습니다. 믿는 서버만 연결하세요.
         </p>
       )}
       <label>
