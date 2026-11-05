@@ -1,0 +1,27 @@
+{
+  "name": "Live2D 캐릭터 이름",
+  "type": "live2d",
+  "persona": "캐릭터 말투와 성격. 서버가 시스템 프롬프트 뒤에 붙인다.",
+  "image": "icon.png",
+  "icon": "icon.png",
+  "voice": { "voice": "default" },
+  "live2d": {
+    "model": "model/모델이름.model3.json",
+    "scale": 1.0,
+    "offsetX": 0,
+    "offsetY": 0,
+    "params": {
+      "mouthOpen": "ParamMouthOpenY"
+    },
+    "expressions": {
+      "neutral": "",
+      "happy": "",
+      "thinking": ""
+    },
+    "motions": {
+      "idle": "",
+      "thinking": "",
+      "talking": ""
+    }
+  }
+}

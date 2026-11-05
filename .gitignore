@@ -1,0 +1,13 @@
+node_modules/
+out/
+dist/
+vendor/live2dcubismcore*.js
+.DS_Store
+*.log
+*.tsbuildinfo
+_to_delete/
+my-characters/
+.test-tmp/
+.env
+.env.*
+.claude/

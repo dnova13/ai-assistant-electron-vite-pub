@@ -1,0 +1,25 @@
+// 화면 쪽 소리 코드(vad, voice)를 시험하는 test/voice.test.ts 전용: DOM과 node 타입을 같이 쓴다
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "composite": false
+  },
+  "include": [
+    "test/voice.test.ts",
+    "test/wake.test.ts",
+    "test/transcript.test.ts",
+    "src/renderer/src/lib/vad.ts",
+    "src/renderer/src/lib/voice.ts",
+    "src/renderer/src/lib/sounds.ts",
+    "src/renderer/src/lib/wake.ts",
+    "src/renderer/src/env.d.ts",
+    "src/main/**/*",
+    "src/shared/**/*"
+  ],
+  "exclude": []
+}

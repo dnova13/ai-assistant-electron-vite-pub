@@ -1,0 +1,268 @@
+[
+  {
+    "query": "테스트",
+    "names": [
+      "test",
+      "테스트",
+      "toast"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "test",
+    "names": [
+      "test",
+      "테스트",
+      "toast"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "마이 뮤직",
+    "names": [
+      "My Music",
+      "마이 뮤직",
+      "My Movie"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "마이뮤직",
+    "names": [
+      "MyMusic",
+      "My_Music",
+      "마이 뮤직",
+      "Movie"
+    ],
+    "want": [
+      "c1",
+      "c2",
+      "c3"
+    ]
+  },
+  {
+    "query": "My Music",
+    "names": [
+      "마이 뮤직",
+      "My Music",
+      "My Movie"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "샘플",
+    "names": [
+      "sample",
+      "샘플",
+      "simple"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "리포트",
+    "names": [
+      "report.txt",
+      "리포트.txt",
+      "notes.txt"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "백업",
+    "names": [
+      "backup",
+      "백업",
+      "archive"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "테스트",
+    "names": [
+      "시험",
+      "검사",
+      "sample"
+    ],
+    "want": []
+  },
+  {
+    "query": "메모.txt",
+    "names": [
+      "메모.txt",
+      "memo.txt",
+      "memo.pdf"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "리포트",
+    "names": [
+      "report_2026.txt",
+      "리포트_2026.txt",
+      "invoice.txt"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "데이터",
+    "names": [
+      "data",
+      "데이터",
+      "date"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "다운로드",
+    "names": [
+      "download",
+      "다운로드",
+      "upload"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "포토",
+    "names": [
+      "photo",
+      "포토",
+      "video"
+    ],
+    "want": [
+      "c1",
+      "c2"
+    ]
+  },
+  {
+    "query": "테스트.txt",
+    "names": [
+      "test.txt",
+      "test.pdf",
+      "테스트.txt"
+    ],
+    "want": [
+      "c1",
+      "c3"
+    ]
+  },
+  {
+    "query": "마이 뮤직",
+    "names": [
+      "My-Music",
+      "my_music",
+      "MyMusic"
+    ],
+    "want": [
+      "c1",
+      "c2",
+      "c3"
+    ]
+  },
+  {
+    "query": "리포트 2026",
+    "names": [
+      "report_2026.txt",
+      "report_2025.txt"
+    ],
+    "want": [
+      "c1"
+    ]
+  },
+  {
+    "query": "없는폴더",
+    "names": [
+      "test",
+      "music",
+      "sample"
+    ],
+    "want": []
+  },
+  {
+    "query": "테스트",
+    "names": [
+      "text",
+      "task",
+      "toast"
+    ],
+    "want": []
+  },
+  {
+    "query": "마이 뮤직",
+    "names": [
+      "My Music Archive",
+      "My Movie Archive"
+    ],
+    "want": [
+      "c1"
+    ]
+  },
+  {
+    "query": "즈크브로",
+    "names": [
+      "zxqvbro"
+    ],
+    "want": [
+      "c1"
+    ]
+  },
+  {
+    "query": "에이아이",
+    "names": [
+      "AI"
+    ],
+    "want": [
+      "c1"
+    ]
+  },
+  {
+    "query": "엔비디아",
+    "names": [
+      "NVIDIA"
+    ],
+    "want": [
+      "c1"
+    ]
+  },
+  {
+    "query": "비에스코드",
+    "names": [
+      "VSCode"
+    ],
+    "want": [
+      "c1"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <!-- 몸 -->
+  <path d="M60 400 Q60 290 150 280 Q240 290 240 400 Z" fill="#5b6cff"/>
+  <rect x="132" y="240" width="36" height="50" rx="10" fill="#f6d9c4"/>
+  <!-- 뒷머리 -->
+  <ellipse cx="150" cy="150" rx="92" ry="105" fill="#2b2f5a"/>
+  <!-- 얼굴 -->
+  <ellipse cx="150" cy="165" rx="70" ry="80" fill="#fbe6d6"/>
+  <!-- 앞머리 -->
+  <path d="M80 150 Q90 80 150 78 Q210 80 220 150 Q190 110 150 112 Q110 110 80 150 Z" fill="#2b2f5a"/>
+  <!-- 눈 -->
+  <ellipse cx="122" cy="170" rx="11" ry="15" fill="#fff"/>
+  <ellipse cx="178" cy="170" rx="11" ry="15" fill="#fff"/>
+  <circle cx="122" cy="173" r="8" fill="#5b6cff"/>
+  <circle cx="178" cy="173" r="8" fill="#5b6cff"/>
+  <circle cx="125" cy="169" r="3" fill="#fff"/>
+  <circle cx="181" cy="169" r="3" fill="#fff"/>
+  <!-- 볼 -->
+  <ellipse cx="100" cy="195" rx="11" ry="6" fill="#ffb3b3" opacity=".6"/>
+  <ellipse cx="200" cy="195" rx="11" ry="6" fill="#ffb3b3" opacity=".6"/>
+  <!-- 입 -->
+  <path d="M137 208 Q150 220 163 208" stroke="#c0605a" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

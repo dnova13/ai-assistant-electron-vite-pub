@@ -1,0 +1,101 @@
+{
+  "name": "ai-assistant-electron-vite",
+  "version": "0.5.0",
+  "description": "Personal AI assistant frontend (Electron + React + Vite + TypeScript)",
+  "main": "./out/main/index.js",
+  "author": "dnova13",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json && tsc --noEmit -p tsconfig.test.json",
+    "test": "vitest run",
+    "eval:file-names": "node tools/file-name-eval.mjs",
+    "mock": "node tools/mock-server.js",
+    "dist:win": "electron-vite build && electron-builder --win --publish never",
+    "dist:mac": "electron-vite build && electron-builder --mac --publish never",
+    "dist:linux": "electron-vite build && electron-builder --linux --publish never"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.0",
+    "@pixi/unsafe-eval": "6.5.10",
+    "cmu-pronouncing-dictionary": "3.0.0",
+    "discord.js": "^14.27.0",
+    "es-hangul": "2.4.0",
+    "pixi-live2d-display": "0.4.0",
+    "pixi.js": "6.5.10",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "~19.2.0",
+    "@types/react-dom": "~19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "electron": "^43.0.0",
+    "electron-builder": "^26.0.0",
+    "electron-vite": "~5.0.0",
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.0",
+    "vitest": "4.1.11"
+  },
+  "overrides": {
+    "gh-pages": "^6.3.0"
+  },
+  "build": {
+    "appId": "com.example.ai-assistant",
+    "productName": "AI 비서",
+    "afterPack": "./tools/fix-mac-bundle-name.cjs",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*",
+      "assets/**/*",
+      "vendor/**/*",
+      "package.json",
+      "!node_modules/gh-pages/**/*",
+      "!node_modules/onnxruntime-web/**/*",
+      "!node_modules/@huggingface/transformers/dist/*.web.*",
+      "!node_modules/@huggingface/transformers/dist/transformers.js",
+      "!node_modules/@huggingface/transformers/dist/transformers.min.js"
+    ],
+    "extraResources": [
+      {
+        "from": "characters",
+        "to": "characters"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "files": [
+        "!node_modules/onnxruntime-node/bin/napi-v6/{linux,darwin}/**/*"
+      ]
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.productivity",
+      "extendInfo": {
+        "NSMicrophoneUsageDescription": "음성으로 비서에게 명령하기 위해 마이크를 사용합니다."
+      },
+      "files": [
+        "!node_modules/onnxruntime-node/bin/napi-v6/{linux,win32}/**/*"
+      ]
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility",
+      "files": [
+        "!node_modules/onnxruntime-node/bin/napi-v6/{darwin,win32}/**/*"
+      ]
+    },
+    "asarUnpack": [
+      "**/node_modules/onnxruntime-node/**/*",
+      "**/node_modules/sharp/**/*",
+      "**/node_modules/@img/**/*"
+    ]
+  }
+}
